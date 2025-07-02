@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Piano</title>
+
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>Virtual Piano</h2>
+            <div class="column volume-slider">
+                <span>Volume</span> <input type="range" min="0" max="1" value="0.5" step="any">
+            </div>
+            <div class="column keys-check">
+                <span>Teclas</span> <input type="checkbox" checked>
+            </div>
+        </header>
+        <ul class="piano-keys">
+            <li class="key white" data-key="a" tabindex="0" aria-label="Nota A"><span>a</span></li>
+            <li class="key black" data-key="w" tabindex="0" aria-label="Nota W"><span>w</span></li>
+            <li class="key white" data-key="s" tabindex="0" aria-label="Nota S"><span>s</span></li>
+            <li class="key black" data-key="e" tabindex="0" aria-label="Nota E"><span>e</span></li>
+            <li class="key white" data-key="d" tabindex="0" aria-label="Nota D"><span>d</span></li>
+            <li class="key black" data-key="f" tabindex="0" aria-label="Nota F"><span>f</span></li>
+            <li class="key white" data-key="t" tabindex="0" aria-label="Nota T"><span>t</span></li>
+            <li class="key black" data-key="g" tabindex="0" aria-label="Nota G"><span>g</span></li>
+            <li class="key white" data-key="y" tabindex="0" aria-label="Nota Y"><span>y</span></li>
+            <li class="key black" data-key="h" tabindex="0" aria-label="Nota H"><span>h</span></li>
+            <li class="key white" data-key="u" tabindex="0" aria-label="Nota U"><span>u</span></li>
+            <li class="key black" data-key="j" tabindex="0" aria-label="Nota J"><span>j</span></li>
+            <li class="key white" data-key="k" tabindex="0" aria-label="Nota K"><span>k</span></li>
+            <li class="key black" data-key="o" tabindex="0" aria-label="Nota O"><span>o</span></li>
+            <li class="key white" data-key="l" tabindex="0" aria-label="Nota L"><span>l</span></li>
+            <li class="key black" data-key="p" tabindex="0" aria-label="Nota P"><span>p</span></li>
+            <li class="key white" data-key=";" tabindex="0" aria-label="Nota ;"><span>;</span></li>
+        </ul>
+    </div> 
+    <script src="./src/scripts/engine.js" defer></script>
+</body>
+</html>
